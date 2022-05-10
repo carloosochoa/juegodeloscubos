@@ -118,6 +118,10 @@ class juegoCubos:
                 cuboOrigen = self.selecCubo('Selecciona el cubo ORIGEN 8, 5, 3 o SALIR:')
                 cuboDestino = self.selecCubo('Selecciona el cubo DESTINO 8, 5, 3 o SALIR:')
                 self.moverCubo(cuboOrigen, cuboDestino)
+            elif opcion == "B":
+                cubo = self.selecCubo('TODOS')
+                self.vaciarCubo(cubo)
+
             self.mostrarEstadoCubos()
             self.checkObjetivo()
 
